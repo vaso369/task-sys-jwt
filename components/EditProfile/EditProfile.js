@@ -111,9 +111,9 @@ const EditProfile = () => {
       console.log(forInsert);
       $.ajax({
         url: url + "?page=edit_user",
-//         headers: {
-//           Authorization: "JWT" + " " + localStorage.getItem("token")
-//         },
+        headers: {
+          Authorization: "JWT" + " " + localStorage.getItem("token")
+        },
         method: "POST",
         dataType: "json",
         data: forInsert,
