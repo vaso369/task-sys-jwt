@@ -30,13 +30,13 @@ const Login = (props) => {
       data: loginObj,
       success: function(data) {
         console.log(data);
-      //  localStorage.setItem("token", data.jwt);
+       localStorage.setItem("token", data.jwt);
         dispatch({
           type: "SET_LOGIN",
           data: data
         });
-        // console.log(loggedIn);
-        // window.location.href = `${urlRedirect}/user`;
+        console.log(loggedIn);
+        window.location.href = `${urlRedirect}/user`;
         if (data.code === "200") {
           Router.push("/employee");
         } else {
