@@ -138,9 +138,9 @@ export default function UserProfile() {
           url: url + "?page=upload_photo",
           method: "POST",
           data: form_data,
-//           headers: {
-//             Authorization: "JWT" + " " + localStorage.getItem("token")
-//           },
+          headers: {
+            Authorization: "JWT" + " " + localStorage.getItem("token")
+          },
           dataType: "json",
           cache: false,
           contentType: false,
