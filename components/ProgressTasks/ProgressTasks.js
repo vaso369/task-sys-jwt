@@ -10,9 +10,9 @@ const ProgressTasks = () => {
   useEffect(() => {
     $.ajax({
       url: url + "?page=progress_tasks",
-//       headers: {
-//         Authorization: "JWT" + " " + localStorage.getItem("token")
-//       },
+      headers: {
+        Authorization: "JWT" + " " + localStorage.getItem("token")
+      },
       method: "POST",
       dataType: "json",
       data: {
