@@ -62,9 +62,9 @@ const SearchUsers = () => {
   useEffect(() => {
     $.ajax({
       url: url + "?page=get_team",
-//       headers: {
-//         Authorization: "JWT" + " " + localStorage.getItem("token")
-//       },
+      headers: {
+        Authorization: "JWT" + " " + localStorage.getItem("token")
+      },
       method: "GET",
       dataType: "json",
       data: {
