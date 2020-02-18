@@ -10,9 +10,9 @@ const DoneTasks = () => {
   useEffect(() => {
     $.ajax({
       url: url + "?page=done_tasks",
-//       headers: {
-//         Authorization: "JWT" + " " + localStorage.getItem("token")
-//       },
+      headers: {
+        Authorization: "JWT" + " " + localStorage.getItem("token")
+      },
       method: "POST",
       dataType: "json",
       data: {
