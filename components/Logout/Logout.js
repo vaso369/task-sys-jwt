@@ -10,7 +10,7 @@ const Logout = () => {
   const dispatch = useDispatchState();
 
   const logoutUser = () => {
-  //  localStorage.removeItem("token");
+   localStorage.removeItem("token");
     dispatch({
       type: "SET_LOGOUT"
     });
