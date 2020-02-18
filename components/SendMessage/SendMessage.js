@@ -70,9 +70,9 @@ const SendMessage = ({ props, employee }) => {
     console.log(forSend);
     $.ajax({
       url: url + "?page=send_message",
-//       headers: {
-//         Authorization: "JWT" + " " + localStorage.getItem("token")
-//       },
+      headers: {
+        Authorization: "JWT" + " " + localStorage.getItem("token")
+      },
       method: "POST",
       dataType: "json",
       data: forSend,
